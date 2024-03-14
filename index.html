@@ -62,7 +62,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="wtracker.js" type="text/javascript"></script>
-    <script src="Build/NewBuild.loader.js"></script>
+    <script src="Build/navy-build.loader.js"></script>
     <script>
         var initialize = async() =>{
             var unityCanvas = document.querySelector("#unity-canvas");
@@ -96,9 +96,9 @@
             
             document.getElementById('startARDiv').style.display = 'none';
             createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/NewBuild.data",
-                    frameworkUrl: "Build/NewBuild.framework.js",
-                    codeUrl: "Build/NewBuild.wasm",
+                    dataUrl: "Build/navy-build.data",
+                    frameworkUrl: "Build/navy-build.framework.js",
+                    codeUrl: "Build/navy-build.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "WorkingNavy",
