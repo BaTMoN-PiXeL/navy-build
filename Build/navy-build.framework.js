@@ -19,4 +19,17 @@ if (typeof exports === 'object' && typeof module === 'object')
 else if (typeof define === 'function' && define['amd'])
   define([], function() { return unityFramework; });
 else if (typeof exports === 'object')
-  exports["unityFramework"] = unityFramework;
+    exports["unityFramework"] = unityFramework;
+
+//function startAccelerometerListener() {
+//    window.addEventListener('devicemotion', (event) => {
+//        const x = event.accelerationIncludingGravity.x;
+//        const y = event.accelerationIncludingGravity.y;
+//        const z = event.accelerationIncludingGravity.z;
+
+//        // Replace 'YourUnityGameObjectName' with the GameObject name in your Unity project
+//        // that has the AccelerometerManager component attached
+//        // Replace 'ReceiveAccelerometerData' with the name of the method in your Unity script
+//        unityInstance.SendMessage('ARCamera', 'Update', ${ x }, ${ y }, ${ z });
+//    });
+//}
